@@ -13,4 +13,20 @@ export default class GalacticAge {
     return mercuryAge;
   }
 
+  getVenusYears() {
+    const venusAge = this.earthYears*.62;
+    return venusAge;
+  }
+
+  getMarsYears() {
+    const marsAge = this.earthYears*1.88;
+    return marsAge;
+  }
+
+  getJupiterYears() {
+    const jupiterAge = this.earthYears*11.86;
+    return jupiterAge;
+  }
+  
+
 }

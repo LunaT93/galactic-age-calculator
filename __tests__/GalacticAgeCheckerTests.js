@@ -12,6 +12,12 @@ describe('Date', () => {
     expect(age1.getMercuryYears()).toEqual(.24);
   });
 
+  test('should correctly identify venus, mars, jupiter years', () => {    const age2 = new GalacticAge("1");
+    expect(age2.getVenusYears()).toEqual(.62);
+    expect(age2.getMarsYears()).toEqual(1.88);
+    expect(age2.getJupiterYears()).toEqual(11.86);
+});
+
   // test('should correctly identify the day as 0-6', () => {
   //   const day1 = new Date('1975-8-19');
   //   const dayOfWeek1 = new Day(day1);
