@@ -3,14 +3,14 @@ export default class GalacticDifference {
     this.birthYear1 = birthYear1;
     this.birthYear2 = birthYear2;
     this.earthDifference = this.getEarthDifference();
-    this.mercuryDifference = this.getMercuryDifference
+    this.mercuryDifference = this.getMercuryDifference;
     this.venusDifference = this.getVenusDifference;
     this.marsDifference = this.getMarsDifference;
     this.jupiterDifference = this.getJupiterDifference;
     }
 
     getEarthDifference() {
-        return Number(this.birthYear1 - this.birthYear2);
+        return Number(this.birthYear1 - this.birthYear2); //ensures earthDifference is a number in case string is read.
     }
 
     getMercuryDifference() {
