@@ -1,32 +1,31 @@
 export default class GalacticAge {
   constructor(earthYears) {
+    this.mercuryYears = this.getMercuryYears();
     this.earthYears = Number(earthYears);
+    this.venusYears = this.getVenusYears();
+    this.marsYears = this.getMarsYears();
+    this.jupiterYears = this.getJupiterYears();
+    
   }
 
   getEarthYears() {
-    const earthAge = this.earthYears*1;
-    return earthAge;
+    return this.earthYears*1;
   }
 
   getMercuryYears() {
-    const mercuryAge = this.earthYears*.24;
-    return mercuryAge;
+    return this.earthYears*.24;
   }
 
   getVenusYears() {
-    const venusAge = this.earthYears*.62;
-    return venusAge;
+    return this.earthYears*.62;
   }
 
   getMarsYears() {
-    const marsAge = this.earthYears*1.88;
-    return marsAge;
+    return this.earthYears*1.88;
   }
 
   getJupiterYears() {
-    const jupiterAge = this.earthYears*11.86;
-    return jupiterAge;
+    return this.earthYears*11.86;
   }
   
-
 }
