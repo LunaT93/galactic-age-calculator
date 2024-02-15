@@ -1,4 +1,4 @@
-import GalacticAge from '../src/js/date-checker';
+import GalacticAge from '../src/js/GalacticAgeCalculator.js';
 
 describe('Date', () => {
 
@@ -6,6 +6,11 @@ describe('Date', () => {
     const age = new GalacticAge("30");
     expect(age.getEarthYears()).toEqual(30);
   }); 
+
+  test('should correctly id Mercury years as .24 given input 1', () => {
+    const age1 = new GalacticAge("1");
+    expect(age1.getMercuryYears()).toEqual(.24);
+  });
 
   // test('should correctly identify the day as 0-6', () => {
   //   const day1 = new Date('1975-8-19');
